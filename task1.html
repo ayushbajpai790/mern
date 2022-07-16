@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        display: flex;
+        flex:50%;
+        flex-direction: column;
+    }
+    #d1{
+        background-color: lightblue;
+        height: 49vh;
+        display: inline-block;
+       
+    }
+    #d2{
+        background-color: pink;
+       
+        width:100%;
+        display: inline-block;
+        position: relative;
+    }
+    .row{
+        display: flex;
+    }
+  .column{
+    flex:50%;
+   
+  }
+  @media only screen and (max-width: 600px) {
+ .row{
+    flex:100%;
+    flex-direction: column;
+ }
+}
+   
+   
+</style>
+<script>
+    function ayu(){
+        var x=document.getElementById("i1");
+var y=document.getElementById("d6");
+y.innerHTML=x.value;
+    }
+</script>
+</head>
+
+<body>
+    <div id="d1">
+        <center>
+       <u> <h1>
+            HTML Live interpreter
+        </h1>
+    </u>
+        <p>
+            If you need something like this for html then you came to right website.
+        </p>
+        <img src="https://media0.giphy.com/media/DArEBbmDHlaOSQhU2Y/200.gif" alt="">
+    </center>
+
+    </div>
+    <div id="d2" >
+        <div class="row">
+            <div class="column" style="background-color:#9E9E9E;">
+              <h2>Write your code here</h2>
+             <textarea id="i1" cols="100" rows="17" onkeyup="ayu()"></textarea>
+            </div>
+          
+            <div class="column" style="background-color:white;">
+              
+                <center><u><h2>Output window</h2></u></center>
+                <div id="d6">
+                </div>
+
+
+            </div>
+          </div>
+
+    </div>
+</body>
+</html>
